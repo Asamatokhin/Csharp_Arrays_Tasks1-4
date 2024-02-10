@@ -7,8 +7,29 @@ while (i < n)
 {
     if (array[i] > max) ;
     {
-        max = array[i];
+        max = array[i];  // ЧЕРЕЗ WHILE
     }
     i = i + 1;
+}
+Console.WriteLine(max);
+
+max = array[0];
+for (int j = 0; j < n; j++) // ЧЕРЕЗ FOR
+{
+    if (array[j] > max)
+    {
+        max = array[j];
+    }
+}
+Console.WriteLine(max);
+
+max = array [0];
+foreach(int e in array)  // ЧЕРЕЗ FOREACH
+
+{
+    if (e > max)
+    {
+        max = e;
+    }
 }
 Console.WriteLine(max);
